@@ -4,14 +4,11 @@ import { Link } from 'react-router-dom';
 const Header = () => {
     return(
         <div>
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            <nav className="navbar navbar-expand-lg navbar-light fixed-top shadow-sm p-3 mb-5" style={{"backgroundColor": "#FF859F"}}>                    
                 <div className="container">
-
-                    <Link to="/">
-                        <div className="d-inline-block align-top">
-                            <img src="https://img.icons8.com/color/48/000000/black-jaguar.png" className="mr-2" width="30" height="30" alt="logo"/>                        
-                            <p className="navbar-brand">Club Jaguar</p>                        
-                        </div>
+                    <Link to="/">                        
+                        <img src="logo.jpg" className="mb-2 mr-2" width="40" height="40" alt="logo"/>                        
+                        <h3 className="navbar-brand text-light">Pequeñas tienditas</h3>                        
                     </Link>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
@@ -21,22 +18,22 @@ const Header = () => {
                         <ul className="navbar-nav ml-auto">
                             <Link to="/">
                                 <li className="nav-item active">
-                                    <p className="nav-link">Home</p>
+                                    <h5 className="nav-link text-light">Inicio</h5>
                                 </li>
                             </Link>
                             <Link to="/about">                            
                                 <li className="nav-item active">
-                                    <p className="nav-link">About</p>
+                                    <h5 className="nav-link text-light">Acerca de</h5>
                                 </li>
                             </Link>
-                            <Link to="/projects">                                
+                            <Link to="/stores">                                
                                 <li className="nav-item active">
-                                    <p className="nav-link">Projects</p>
+                                    <h5 className="nav-link text-light">Tienditas</h5>
                                 </li>
                             </Link>
                             <Link to="/contact">
                                 <li className="nav-item active">
-                                    <p className="nav-link">Contact</p>
+                                    <h5 className="nav-link text-light">Contacto</h5>
                                 </li>
                             </Link>
                         </ul>

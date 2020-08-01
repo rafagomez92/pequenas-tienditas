@@ -1,9 +1,10 @@
 import React from 'react';
+import History from '../components/about/History';
 
 const About = () => {
     return(
         <div>
-            <h1>About</h1>
+            <History />
         </div>
     );
 }

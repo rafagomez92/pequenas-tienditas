@@ -6,6 +6,7 @@ import Stores from './pages/Stores';
 import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 const App = () => {
   return(
@@ -19,6 +20,7 @@ const App = () => {
               <Route path="/contact" component={Contact}/>              
               <Route component={NotFound}/>
           </Switch>
+          <Footer/>
         </div>                    
       </Router>
   );

@@ -1,46 +1,33 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Container, Navbar, Nav } from 'react-bootstrap';
 
 const Header = () => {
     return(
-        <div>
-            <nav className="navbar navbar-expand-lg navbar-light fixed-top shadow-sm p-3 mb-5" style={{"backgroundColor": "#FF859F"}}>                    
-                <div className="container">
-                    <Link to="/">                        
-                        <img src="logo.jpg" className="mb-2 mr-2" width="40" height="40" alt="logo"/>                        
-                        <h3 className="navbar-brand text-light">Pequeñas tienditas</h3>                        
-                    </Link>
-                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-
-                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul className="navbar-nav ml-auto">
-                            <Link to="/">
-                                <li className="nav-item active">
-                                    <h5 className="nav-link text-light">Inicio</h5>
-                                </li>
-                            </Link>
-                            <Link to="/about">                            
-                                <li className="nav-item active">
-                                    <h5 className="nav-link text-light">Acerca de</h5>
-                                </li>
-                            </Link>
-                            <Link to="/stores">                                
-                                <li className="nav-item active">
-                                    <h5 className="nav-link text-light">Tienditas</h5>
-                                </li>
-                            </Link>
-                            <Link to="/contact">
-                                <li className="nav-item active">
-                                    <h5 className="nav-link text-light">Contacto</h5>
-                                </li>
-                            </Link>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
+      // <Navbar collapseOnSelect sticky="top" expand="lg" bg="dark" variant="dark">
+      <Navbar collapseOnSelect sticky="top" expand="lg" variant="dark" style={{"backgroundColor": "#F6537A"}}>
+        <Container>
+          <Navbar.Brand as={Link} to="/">
+            <img
+              alt=""
+              src="/logo.jpg"
+              width="30"
+              height="30"
+              className="d-inline-block align-top"
+            />{' '}
+            Pequeñas Tienditas
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">          
+            <Nav className="ml-auto">
+              <Nav.Link as={Link} to="/" className="text-light">Inicio</Nav.Link>
+              <Nav.Link as={Link} to="/about" className="text-light">Nosotros</Nav.Link>
+              <Nav.Link as={Link} to="/stores" className="text-light">Tienditas</Nav.Link>
+              <Nav.Link as={Link} to="/contact" className="text-light">Contactos</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>        
     );
 }
 

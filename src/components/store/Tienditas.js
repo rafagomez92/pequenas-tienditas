@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../App.css';
 
 function Tienditas(props) {
     const { name, owner, img } = props;

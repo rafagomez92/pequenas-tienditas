@@ -12,7 +12,7 @@ function Tiendas() {
     return (
         <Container fluid>
             <Row className="justify-content-center">
-                <Col lg={12} className="mt-4 text-center">
+                <Col lg={12} md={6} xs={12} className="mt-4 text-center">
                     <span className="display-4 text-light text-center">
                         #Consumelocal
                     </span>      

@@ -19,22 +19,23 @@ code {
 }
 
 .footer-bg {
-  margin-top: 20px;   
+  margin-top: 12%;   
   bottom:0;   
   width:100%;
   /* background-color: #343A40; */  
-  background-color: #F6537A;
+  background: #F6537A;
   color: #fff
 }
 
 @media (max-width: 480px) {
   .footer-bg {  
+    margin-top: 37%;   
     position: bottom;
     left:0;
     bottom:0;
     right:0;    
     /* background-color: #343A40; */
-    background-color: #F6537A;
+    background: #F6537A;
     color: #fff
   }
   

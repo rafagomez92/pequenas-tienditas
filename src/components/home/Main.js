@@ -5,12 +5,12 @@ import { Container, Row, Col, Carousel } from 'react-bootstrap';
 const Main = () => {
     return(
         <Container>
-            <Row className="justify-content-center mt-5">
-                <Col lg={12} md={6} xs={12} className="text-center">
+            <Row className="justify-content-center align-item-center mt-5">            
+                <Col lg={12} md={6} xs={12} className="text-center mb-5">
                     <img
                         width={250}
                         height={250}
-                        className="img-fluid mx-auto d-block text-center"
+                        className="img-fluid mx-auto d-block text-center mt-4"
                         src="logo.jpg"
                         alt="Pequeñas tienditas"
                     />
@@ -25,13 +25,16 @@ const Main = () => {
                     />                        
                         <p className="text-white text-center">facebook</p>                      
                     </a>
-                </Col>                                                                  
-            </Row>            
-            <Row className="justify-content-center mt-5">
-                <Col className="mt-5">
-                    <ControlledCarousel/>                                                    
-                </Col>
-            </Row>                                            
+                </Col>              
+                {/* <div className="mt-5">
+                  <ControlledCarousel />                                                                              
+                </div>                                                     */}
+            <Row className="justify-content-center align-item-center mt-5" style={{maxWidth:"800px"}}>
+              <Col className="text-center">
+                <ControlledCarousel />                                                                                                                                                  
+              </Col>
+            </Row>
+            </Row>                                                      
         </Container>        
     );
 }
@@ -48,33 +51,33 @@ function ControlledCarousel() {
   
     return (
       <Carousel activeIndex={index} onSelect={handleSelect}>
-        <Carousel.Item>
-          <img
-            width={500}
-            height={500}
-            className="d-block w-100"
-            src={require('../../assets/images/1.jpg')}
-            alt="First slide"
-          />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            width={500}
-            height={500}
-            className="d-block w-100"
-            src={require('../../assets/images/2.jpg')}
-            alt="Second slide"
-          />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            width={500}
-            height={500}
-            className="d-block w-100"
-            src={require('../../assets/images/3.jpg')}
-            alt="Third slide"
-          />
-        </Carousel.Item>
+          <Carousel.Item>
+            <Container>
+            <img              
+              className="d-block w-100 img-fluid"
+              src={require('../../assets/images/1.jpg')}
+              alt="First slide"
+              />
+           </Container>
+          </Carousel.Item>
+          <Carousel.Item>
+            <Container>
+            <img
+              className="d-block w-100 img-fluid"
+              src={require('../../assets/images/2.jpg')}
+              alt="Second slide"
+              />
+            </Container>
+          </Carousel.Item>
+          <Carousel.Item>
+            <Container>
+            <img   
+              className="d-block w-100 img-fluid"
+              src={require('../../assets/images/3.jpg')}
+              alt="Third slide"
+              />
+            </Container>
+          </Carousel.Item>
       </Carousel>
     );
   }

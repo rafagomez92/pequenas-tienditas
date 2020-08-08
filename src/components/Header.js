@@ -23,7 +23,7 @@ const Header = () => {
               <Nav.Link as={Link} to="/" className="text-light">Inicio</Nav.Link>
               <Nav.Link as={Link} to="/about" className="text-light">Nosotros</Nav.Link>
               <Nav.Link as={Link} to="/stores" className="text-light">Tienditas</Nav.Link>
-              <Nav.Link as={Link} to="/contact" className="text-light">Contactos</Nav.Link>
+              <Nav.Link as={Link} to="/contact" className="text-light">Contacto</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

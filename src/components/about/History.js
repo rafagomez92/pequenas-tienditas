@@ -4,11 +4,13 @@ import { Card, Container, Row } from 'react-bootstrap';
 
 export default function History() {
     return (
-        <Container>
+        <Container>            
             <Row className="justify-content-center mt-5">
-                <Card className="shadow p-3 mb-5 bg-white rounded-0" style={{ width: '50rem' }}>
+                <Card className="shadow p-3 mb-5 mr-3 ml-3 rounded-0" style={{ width: '35rem' }}>
                     <Card.Body>
-                        <Card.Title className="text-center display-4">Pequeñas Tienditas</Card.Title>                            
+                        <Card.Title className="text-center">
+                        <h1 className="font-weight-light">Pequeñas Tienditas</h1>
+                        </Card.Title>                            
                         <img 
                             width={400}
                             className="img-fluid mx-auto d-block text-center mt-4"
@@ -25,7 +27,7 @@ export default function History() {
                                     deserunt. Aliqua excepteur dolore aliquip.
                                 </Card.Text>
                     </Card.Body>
-                </Card>
+                </Card>            
             </Row>
         </Container>
 

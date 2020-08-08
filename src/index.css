@@ -18,6 +18,9 @@ code {
     monospace;
 }
 
+.carousel-img {
+  max-width: 800px !important;
+}
 .footer-bg {
   margin-top: 12%;   
   bottom:0;   
@@ -27,7 +30,15 @@ code {
   color: #fff
 }
 
-@media (max-width: 480px) {
+@media (max-device-width: 480px) {
+  .carousel-img {    
+    max-width: 350px !important;
+  }
+
+  /* h1 {
+    font-size: 30px;
+  } */
+
   .footer-bg {  
     margin-top: 37%;   
     position: bottom;

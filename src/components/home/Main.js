@@ -8,8 +8,8 @@ const Main = () => {
             <Row className="justify-content-center align-item-center mt-5">            
                 <Col lg={12} md={6} xs={12} className="text-center mb-5">
                     <img
-                        width={250}
-                        height={250}
+                        width={350}
+                        height={350}
                         className="img-fluid mx-auto d-block text-center mt-4"
                         src="logo.jpg"
                         alt="Pequeñas tienditas"
@@ -29,7 +29,7 @@ const Main = () => {
                 {/* <div className="mt-5">
                   <ControlledCarousel />                                                                              
                 </div>                                                     */}
-            <Row className="justify-content-center align-item-center mt-5" style={{maxWidth:"800px"}}>
+            <Row className="justify-content-center align-item-center mt-5 carousel-img">
               <Col className="text-center">
                 <ControlledCarousel />                                                                                                                                                  
               </Col>

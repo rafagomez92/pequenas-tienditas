@@ -9,7 +9,7 @@ export default function History() {
                 <Card className="shadow p-3 mb-5 mr-3 ml-3 rounded-0" style={{ width: '35rem' }}>
                     <Card.Body>
                         <Card.Title className="text-center">
-                        <h1 className="font-weight-light">Pequeñas Tienditas</h1>
+                        <h1 className="font-weight-light text-primary">Pequeñas Tienditas</h1>
                         </Card.Title>                            
                         <img 
                             width={400}

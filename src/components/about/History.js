@@ -11,10 +11,8 @@ export default function History() {
                     <Card.Body>
                         <Card.Title className="text-center">
                         <h1 className="font-weight-light">Pequeñas Tienditas</h1>
-                        </Card.Title>                            
-                        <Online 
-                            style={{width: "100%", height:"50%"}}
-                        />
+                        </Card.Title>                                                
+                        <Online className="text-center" style={{width:"100%", height:"35%"}} />
                         {/* <img 
                             width={400}
                             className="img-fluid mx-auto d-block text-center mt-4"

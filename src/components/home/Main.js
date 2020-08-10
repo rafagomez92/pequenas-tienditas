@@ -34,14 +34,14 @@ const Main = () => {
             <Col lg={12} md={12} xs={12} className="text-center">              
               <h1 className="font-weight-normal display-4" style={{color:"#f6537a"}}>Encuentra lo que necesitas</h1>
             </Col>
-            <Row>
-            <Col lg={4} md={4} xs={4} className="text-center">
+            <Row className="mt-5">
+            <Col lg={4} md={4} xs={12} className="text-center">
               <Feed style={{width: "50%", height:"100%"}}/>
             </Col>            
-            <Col lg={4} md={4} xs={4} className="text-center">
+            <Col lg={4} md={4} xs={12} className="text-center">
               <Order style={{width: "50%", height:"100%"}}/>                                
             </Col>
-            <Col lg={4} md={4} xs={4} className="text-center">
+            <Col lg={4} md={4} xs={12} className="text-center">
               <Shop style={{width: "50%", height:"100%"}}/>                                
             </Col>
             </Row>
@@ -53,7 +53,7 @@ const Main = () => {
 
             <Row className="justify-content-center align-item-center mt-5 carousel-img">
               <Col className="text-center">
-                <h1 className="font-weight-normal display-4" style={{color:"#f6537a"}}>Descubre</h1>                
+                <h1 className="font-weight-normal mb-5 display-4" style={{color:"#f6537a"}}>Descubre</h1>                
                 <ControlledCarousel />   
               </Col>
             </Row>

@@ -20,14 +20,44 @@ const Header = () => {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">          
             <Nav className="ml-auto">
-              <Nav.Link as={Link} to="/" className="text-light">Inicio</Nav.Link>
-              <Nav.Link as={Link} to="/about" className="text-light">Nosotros</Nav.Link>
-              <Nav.Link as={Link} to="/stores" className="text-light">Tienditas</Nav.Link>
-              <Nav.Link as={Link} to="/contact" className="text-light">Contacto</Nav.Link>
+              <Link to="/">
+                <Nav.Link href="/" className="text-light">Inicio</Nav.Link>
+              </Link>
+              <Link to="/about">
+                <Nav.Link href="#features" className="text-light">Nosotros</Nav.Link>
+              </Link>                          
+              <Link to="/stores">
+                <Nav.Link href="#stores" className="text-light">Tienditas</Nav.Link>
+              </Link>                          
+              <Link to="/contact">
+                <Nav.Link href="#contact" className="text-light">Contacto</Nav.Link>
+              </Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
-      </Navbar>        
+      </Navbar>   
+      
+    //   <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+    //   <Navbar.Brand as={Link} to="/">
+    //         <img
+    //           alt=""
+    //           src="/logo.jpg"
+    //           width="30"
+    //           height="30"
+    //           className="d-inline-block align-top"
+    //         />{' '}
+    //         Pequeñas Tienditas
+    //       </Navbar.Brand>
+    //   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+    //   <Navbar.Collapse id="responsive-navbar-nav">
+    //     <Nav className="ml-auto">
+                                    
+    //     </Nav>        
+    //   </Navbar.Collapse>
+    // </Navbar>
+      
+
+
     );
 }
 

@@ -1,6 +1,7 @@
 import React from 'react';
 // import { Container, Row, Col } from 'react-bootstrap';
 import { Card, Container, Row } from 'react-bootstrap';
+import { ReactComponent as Online } from '../../assets/svg/onlineShop.svg';
 
 export default function History() {
     return (
@@ -9,14 +10,17 @@ export default function History() {
                 <Card className="shadow p-3 mb-5 mr-3 ml-3 rounded-0" style={{ width: '35rem' }}>
                     <Card.Body>
                         <Card.Title className="text-center">
-                        <h1 className="font-weight-light text-primary">Pequeñas Tienditas</h1>
+                        <h1 className="font-weight-light">Pequeñas Tienditas</h1>
                         </Card.Title>                            
-                        <img 
+                        <Online 
+                            style={{width: "100%", height:"50%"}}
+                        />
+                        {/* <img 
                             width={400}
                             className="img-fluid mx-auto d-block text-center mt-4"
                             src={require('../../assets/images/1.jpg')}
                             alt="pequeñas tienditas" 
-                        />
+                        /> */}
                                 <Card.Text className="mt-4 text-justify">
                                     Magna consequat ex Lorem consectetur aliqua 
                                     aliqua eu dolore magna aliqua nostrud Lorem 

@@ -5,7 +5,7 @@ import { Container, Navbar, Nav } from 'react-bootstrap';
 const Header = () => {
     return(
       // <Navbar collapseOnSelect sticky="top" expand="lg" bg="dark" variant="dark">
-      <Navbar collapseOnSelect sticky="top" expand="lg" variant="dark" style={{"backgroundColor": "#F6537A"}}>
+        <Navbar collapseOnSelect sticky="top" expand="lg" variant="dark" style={{"background": "#F6537A"}}> 
         <Container>
           <Navbar.Brand as={Link} to="/">
             <img

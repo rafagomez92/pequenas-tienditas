@@ -13,7 +13,7 @@ function Tiendas() {
         <Container>
             <Row className="justify-content-center">
                 <Col lg={12} md={6} xs={12} className="mt-5 text-center">
-                <h1 className="text-white font-weight-light">#Consumelocal</h1>                          
+                <h1 className="font-weight-light">#consumelocal</h1>                          
                 </Col>
             </Row>
             <Container>
